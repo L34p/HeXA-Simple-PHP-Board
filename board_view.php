@@ -1,8 +1,5 @@
 <?
     require_once "base.html";
-?>
-
-<?
     require_once "db_con.h";
 
     $id=mysql_real_escape_string($_GET['id']);
