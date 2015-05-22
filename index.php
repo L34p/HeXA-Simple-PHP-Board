@@ -22,13 +22,14 @@
 
 <!-- Example -->
                    <tr style='text-align: center;'>
-                        <td>$id</td>
-                        <td style='text-align: left;'><a href='board_view.php?id=$id'>$subject</a></td>
-                        <td>$name</td>
-                        <td>$wdate</td>
-                        <td>$hit</td>
+                        <td>1</td>
+                        <td style='text-align: left;'><a href='board_view.php?id=1'>글 제목입니당</a></td>
+                        <td>여기는 글쓴이 이름</td>
+                        <td>2015-05-21</td> <!-- 글 쓴 날짜 -->
+                        <td>31337</td> <!-- 조회수 -->
                     </tr>
                     
+<!-- Example end... you can delete above example -->                    
 <?
  
  /*
