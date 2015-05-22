@@ -2,24 +2,11 @@
     require_once "base.html";
     require_once "db_con.h";
 
-    $id=mysql_real_escape_string($_GET['id']);
-    $query=mysql_query("select * from $tablename where id='$id'");
-    $res=mysql_fetch_array($query);
-
     #$name=$res['name'];
     #$subject=$res['subject'];
     #$content=$res['content'];
     #$wdate=$res['wdate'];
     #$hit=$res['hit'];
-    
-    $name=htmlspecialchars($res['name'], ENT_QUOTES, 'UTF-8');
-    $subject=htmlspecialchars($res['subject'], ENT_QUOTES, 'UTF-8');
-    $content=htmlspecialchars($res['content'], ENT_QUOTES, 'UTF-8');
-    $wdate=htmlspecialchars($res['wdate'], ENT_QUOTES, 'UTF-8');
-    $hit=htmlspecialchars($res['hit'], ENT_QUOTES, 'UTF-8');
-
-
-    $content=ereg_replace("\n","<br>",$content);
 
 ?>
     <!-- Board View form start -->
@@ -50,7 +37,6 @@
     </div>
     <!-- Board View form end -->
 <?
-    $hit=$hit+1;
-    mysql_query("update $tablename set hit=$hit where id='$id'");
+    // 조회수 업데이트 해야함.
     mysql_close($conn);
 ?>
