@@ -19,29 +19,22 @@
                     <th style="width: 12%;text-align: center;">글쓴이</th>
                     <th style="width: 14%;text-align: center;">작성일</th>
                     <th style="width: 8%;text-align: center;">Hit</th>
+
+<!-- Example -->
+                   <tr style='text-align: center;'>
+                        <td>$id</td>
+                        <td style='text-align: left;'><a href='board_view.php?id=$id'>$subject</a></td>
+                        <td>$name</td>
+                        <td>$wdate</td>
+                        <td>$hit</td>
+                    </tr>
+                    
 <?
-                    while($res=mysql_fetch_array($query))
-                    {
-                        $id=htmlspecialchars($res['id'], ENT_QUOTES, 'UTF-8');
-                        $name=htmlspecialchars($res['name'], ENT_QUOTES, 'UTF-8');
-                        $subject=htmlspecialchars($res['subject'], ENT_QUOTES, 'UTF-8');
-                        $wdate=htmlspecialchars(substr($res['wdate'],0,10), ENT_QUOTES, 'UTF-8');
-                        $hit=htmlspecialchars($res['hit'], ENT_QUOTES, 'UTF-8');
-                        #$id=$res['id'];
-                        #$name=$res['name'];
-                        #$subject=$res['subject'];
-                        #$wdate=substr($res['wdate'],0,10);
-                        #$hit=$res['hit'];
-                        echo("
-                            <tr style='text-align: center;'>
-                                <td>$id</td>
-                                <td style='text-align: left;'><a href='board_view.php?id=$id'>$subject</a></td>
-                                <td>$name</td>
-                                <td>$wdate</td>
-                                <td>$hit</td>
-                            </tr>
-                            ");
-                    }
+ 
+ /*
+  * Write youre code here.
+  */
+  
 ?>
                     <tr><td></td><td></td><td></td><td></td><td></td></tr>
                 </table>
