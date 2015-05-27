@@ -51,6 +51,6 @@
     <!-- Board View form end -->
 <?
     $hit=$hit+1;
-    mysql_query("update $tablename set hit=$hit where id='$id'");
+    mysql_query("update $tablename set hit=$hit where id=$id");
     mysql_close($conn);
 ?>
