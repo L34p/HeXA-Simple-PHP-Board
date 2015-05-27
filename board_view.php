@@ -2,6 +2,9 @@
     require_once "base.html";
     require_once "db_con.h";
 
+    // GET 또는 POST 방식으로 어떤 게시글을 불러올지 값을 받아와야함
+    // sql 쿼리문을 보내서 게시글을 가져와야함
+
     #$name=$res['name'];
     #$subject=$res['subject'];
     #$content=$res['content'];
